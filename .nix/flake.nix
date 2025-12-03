@@ -14,9 +14,9 @@
         devShells = {
             default = pkgs.mkShell {
               buildInputs = with pkgs; [
-                python311Packages.requests
-                python311Packages.beautifulsoup4
-                python311Packages.hatchling
+                python313Packages.requests
+                python313Packages.beautifulsoup4
+                python313Packages.hatchling
               ];
           };
         };
@@ -26,8 +26,8 @@
             name = "SpecMerger";
             src = ./..;
             propagatedBuildInputs = with pkgs; [
-              python311
-              python311Packages.hatchling
+              python313
+              python313Packages.hatchling
             ];
             format = "pyproject";
           };
